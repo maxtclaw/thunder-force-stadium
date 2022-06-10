@@ -1,4 +1,102 @@
 // Imports
 @import "_setup";
 @import "_variables";
-@import "_base-styles"
+@import "_base-styles";
+
+// Navigation
+.navMenu {
+    border: 1px solid red;
+    text-transform: uppercase;
+    max-width: 750px;
+    width: 50vw;
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    a {
+        display: inline-block;
+        padding: 10px;
+    }
+}
+
+
+header {
+    position: relative;
+
+    height: 100vh;
+
+    background-image: url("../assets/images/image-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+
+    .wrapper {
+        height: calc(100% - 49px);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .headerTextContainer {
+        height: calc(100% - 49px);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            margin: 0;
+
+            word-spacing: 9999rem;
+        }
+
+        h3 {
+            margin: 0;
+            padding: 10px 20px;
+            background-color: $colourVivdPurple;
+        }
+    }
+
+    .navSocial {
+        position: absolute;
+        right: 5vw;
+        top: 0;
+
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        ul {   
+            margin: auto 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+    
+            img {
+                padding: 10px;
+                height: 50px;
+            }
+        }
+    }
+
+
+}
+
+html {
+    background-color: blue;
+}
+
+// img {
+//     height: 25px;
+// }

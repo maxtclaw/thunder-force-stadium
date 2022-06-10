@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     
 </head>
 
@@ -20,45 +20,56 @@
 
     <!-- Header -->
     <header>
-        <nav>
+        <div class="wrapper">
+            <nav class="navMenu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="headerTextContainer">
+                <h1>Thunder Force Stadium</h1>
+                <h3>presented by hot cops</h3>
+            </div>
+        </div>
+
+        <nav class="navSocial">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/icons/instagram.svg" alt="">
+                        <p class="sr-only">Instagram</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/icons/facebook.svg" alt="">
+                        <p class="sr-only">Facebook</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/icons/snapchat.svg" alt="">
+                        <p class="sr-only">Snapchat</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/icons/twitter.svg" alt="">
+                        <p class="sr-only">Twitter</p>
+                    </a>
+                </li>
             </ul>
         </nav>
-        <div>
-            <h1>Thunder Force Stadium</h1>
-            <h3>presented by hot cops</h3>
-        </div>
-        <div>
-            <a href="#">
-                <img src="./assets/icons/instagram.svg" alt="">
-                <p class="sr-only">Instagram</p>
-            </a>
-
-            <a href="#">
-                <img src="./assets/icons/facebook.svg" alt="">
-                <p class="sr-only">Facebook</p>
-            </a>
-
-            <a href="#">
-                <img src="./assets/icons/snapchat.svg" alt="">
-                <p class="sr-only">Snapchat</p>
-            </a>
-            
-            <a href="#">
-                <img src="./assets/icons/twitter.svg" alt="">
-                <p class="sr-only">Twitter</p>
-            </a>
-        </div>
 
     </header>
     <!-- End of Header-->
 
     <!-- Main -->
-    <main>
+    <!-- <main>
 
         <section>
             <div>
@@ -116,7 +127,7 @@
             </div>
         </section>
 
-    </main>
+    </main> -->
     <!-- End of Main -->
 
     <!-- Footer -->

@@ -1,11 +1,13 @@
 // General
 html {
     font-size: 62.5%;
+    color: $colourWhite;
 }
 
 .wrapper {
     max-width: 1080px;
     width: 90%;
+    margin: 0 auto;
 }
 
 ul {
@@ -25,6 +27,7 @@ h1 {
     font-family: $fontIceberg;
     font-size: 80px;
     font-weight: normal;
+    text-transform: uppercase;
 
     text-align: center;
     line-height: 80px;
@@ -34,6 +37,7 @@ h2 {
     font-family: $fontIceberg;
     font-size: 52px;
     font-weight: normal;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -56,9 +60,11 @@ button {
     font-family: $fontIceberg;
     font-size: 25px;
     font-weight: normal;
+    color: inherit;
 
     text-align: center;
     line-height: 29px;
+    text-transform: uppercase;
 }
 
 p,
@@ -68,4 +74,9 @@ a {
     font-weight: normal;
 
     line-height: 29px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
