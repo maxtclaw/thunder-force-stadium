@@ -1,0 +1,71 @@
+// General
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 90%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+// Typography
+h1 {
+    font-family: $fontIceberg;
+    font-size: 80px;
+    font-weight: normal;
+
+    text-align: center;
+    line-height: 80px;
+}
+
+h2 {
+    font-family: $fontIceberg;
+    font-size: 52px;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: $fontMontserrat;
+    font-size: 35px;
+    font-weight: normal;
+
+    text-align: center;
+}
+
+h4 {
+    font-family: $fontMontserrat;
+    font-size: 30px;
+    font-weight: normal;
+
+    text-align: center;
+}
+
+button {
+    font-family: $fontIceberg;
+    font-size: 25px;
+    font-weight: normal;
+
+    text-align: center;
+    line-height: 29px;
+}
+
+p,
+a {
+    font-family: $fontMontserrat;
+    font-size: 20px;
+    font-weight: normal;
+
+    line-height: 29px;
+}
