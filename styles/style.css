@@ -285,10 +285,11 @@ h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: normal;
+  text-transform: uppercase;
   text-align: center;
 }
 
-button {
+.readMore {
   font-family: "Iceberg", cursive;
   font-size: 25px;
   font-weight: normal;
@@ -296,6 +297,8 @@ button {
   text-align: center;
   line-height: 29px;
   text-transform: uppercase;
+  background-color: #9200FF;
+  padding: 5px 20px;
 }
 
 p,
@@ -312,7 +315,6 @@ a {
 }
 
 .navMenu {
-  border: 1px solid red;
   text-transform: uppercase;
   max-width: 750px;
   width: 50vw;
@@ -336,14 +338,12 @@ a {
 
 header {
   position: relative;
-  height: 100vh;
   background-image: url("../assets/images/image-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: none;
 }
 header .wrapper {
-  height: calc(100% - 49px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,15 +351,12 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 header .headerTextContainer {
-  height: calc(100% - 49px);
+  padding: 10% 0 20% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +372,6 @@ header .headerTextContainer {
           align-items: center;
 }
 header .headerTextContainer h1 {
-  margin: 0;
   word-spacing: 9999rem;
 }
 header .headerTextContainer h3 {
@@ -420,6 +416,141 @@ header .navSocial ul img {
   height: 50px;
 }
 
-html {
-  background-color: blue;
+main h2 {
+  margin: 0;
+}
+main .sectionWide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0F0632;
+}
+main .sectionWide.performingLineUp {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+main .sectionWide.performingLineUp .textContainer {
+  padding: 0 2.5% 0 max((100% - 1080px) / 2, 5%);
+}
+main .sectionWide.newExperiences {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+main .sectionWide.newExperiences .textContainer {
+  padding: 0 max((100% - 1080px) / 2, 5%) 0 2.5%;
+}
+main .sectionWide * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+main .getYourTickets {
+  padding: 7.5% 0 7.5% 0;
+  background-color: #08080D;
+}
+main .getYourTickets .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .getYourTickets .imgContainer {
+  min-width: 350px;
+}
+main .getYourTickets .textContainer {
+  padding-left: 2.5%;
+}
+main .infoIcons {
+  padding: 10% 0 10% 0;
+  background-color: #3D0369;
+}
+main .infoIcons .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .infoIcons ul {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .infoIcons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .infoIcons img {
+  width: 100px;
+  height: 100px;
+}
+main .infoIcons h4 {
+  margin: 10px 0;
+}
+main .theGram {
+  background-color: #0F0632;
+  padding: 5% 0 5% 0;
+}
+main .theGram .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .theGram .galleryContainer {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+main .theGram .galleryContainer img {
+  -ms-flex-preferred-size: calc((100% - 40px) / 3);
+      flex-basis: calc((100% - 40px) / 3);
 }
