@@ -89,36 +89,71 @@ header {
 // Main Styling
 main {
 
+    .performingLineUp {
+        flex-direction: row-reverse;
+
+        @include respond(mediumSmall) {
+            flex-direction: column;
+        }
+
+        .textContainer {
+            padding: 25px 2.5% 25px $wrapperGap;
+        }
+
+        .imgContainer {
+            @include respond(medium) {
+                padding: 25px $wrapperGap 25px 2.5%;
+            };
+            img {
+                object-position: 50% 20%;
+            }
+        }
+    }
+
+    .newExperiences {
+        flex-direction: row;
+
+        @include respond(mediumSmall) {
+            flex-direction: column;
+        }
+
+        .textContainer {
+            padding: 25px $wrapperGap 25px 2.5%;
+        }
+
+        .imgContainer {
+            @include respond(medium) {
+                padding: 25px 2.5% 25px $wrapperGap;
+            }
+        }
+    }
+
     .sectionWide {
         display: flex;
         align-items: center;
 
         background-color: $colourDarkIndigo;
 
-        &.performingLineUp {
-            flex-direction: row-reverse;
-            .textContainer {
-                padding: 25px 2.5% 25px calc(max(calc((100% - 1080px) / 2), 5%));
-            }
-            .imgContainer {
-                @include respond(medium) {
-                    padding: 25px calc(max(calc((100% - 1080px) / 2), 5%)) 25px 2.5%;
-                }
-            }
-        }
-
-        &.newExperiences {
-            flex-direction: row;
-            .textContainer {
-                padding: 25px calc(max(calc((100% - 1080px) / 2), 5%)) 25px 2.5%;
-            }
-            .imgContainer {
-                padding: 25px 2.5% 25px calc(max(calc((100% - 1080px) / 2), 5%));
-            }
-        }
-
         * {
             flex-basis: 50%;
+        }
+
+        .textContainer {
+            @include respond(mediumSmall) {
+                padding: 50px $wrapperGap;
+            }
+        }
+
+        .imgContainer {
+            @include respond(mediumSmall) {
+                padding: 0;
+                width: 100%;
+
+                img {
+                    object-fit: cover;
+                    height: 40vh;
+                }
+            }
         }
     }
 
@@ -129,15 +164,32 @@ main {
         .wrapper {
             display: flex;
             flex-direction: row;
+            justify-content: center;
             align-items: center;
+
+            @include respond(mediumSmall){
+                flex-direction: column;
+            }
+
         }
 
         .imgContainer {
             min-width: 350px;
+            width: 100%;
+            img {
+                @include respond(mediumSmall){
+                    height: 40vh;
+                    object-fit: cover;
+                    object-position: bottom;
+                }
+            }
         }
 
         .textContainer {
             padding-left: 2.5%;
+            @include respond(mediumSmall) {
+                padding: 50px 0 0 0;
+            }
         }
 
     }
@@ -196,6 +248,12 @@ main {
             img {
                 flex-basis: calc((100% - 40px) / 3);
             }
+
+            .imgContainer:last-child {
+                @include respond(mediumSmall) {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -210,9 +268,13 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 
+    h2 {
+        font-size: 36px;
+    }
+
     p {
-            margin: 0;
-        }
+        margin: 0;
+    }
 
     .wrapper {
         display: flex;
@@ -227,30 +289,45 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+
+        @include respond(mediumSmall){
+            flex-direction: column;
+        }
 
         * {
             flex-basis: 50%;
+            @include respond(mediumSmall){
+                width: 100%;
+                text-align: center;
+            }
         }
     }
 
-    form {
-        padding-top: 19px;
+    .formContainer {
+            h2 {
+                padding-top: 25px;
+            }
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        input {
-            padding: 0 10px;
-            flex-grow: 1;
-        }
-        .button {
-            flex-basis: 0%;
-        }
+            form {
+                padding-top: 19px;
+        
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                input {
+                    padding: 0 10px;
+                    flex-grow: 1;
+                    text-align: left;
+                }
+
+                .button {
+                    flex-basis: 0%;
+                }
+            }
+
     }
-
-    
-
-
 
     .creationCredits {
         width: 100%;

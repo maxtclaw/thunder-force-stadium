@@ -8,3 +8,6 @@ $colourAlmostBlack: #08080D;
 // Font Families
 $fontIceberg: 'Iceberg', cursive;
 $fontMontserrat: 'Montserrat', sans-serif;
+
+// Calculations
+$wrapperGap: calc(max(calc((100% - 1080px) / 2), 5%));

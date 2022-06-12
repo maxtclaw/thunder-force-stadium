@@ -1,6 +1,20 @@
 // Media Query
 @mixin respond($breakpoint) {
     @if ($breakpoint == medium) {
-        @media (max-width: 1000px) {@content}
+        @media (max-width: 1000px){
+            @content
+        }
+    };
+
+    @if ($breakpoint == mediumSmall){
+        @media (max-width: 890px){
+            @content
+        }
+    };
+
+    @if ($breakpoint == small){
+        @media (max-width: 800px) {
+            @content
+        }
     }
 }
