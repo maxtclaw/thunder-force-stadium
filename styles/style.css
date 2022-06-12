@@ -440,39 +440,23 @@ main .performingLineUp {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-@media (max-width: 890px) {
-  main .performingLineUp {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 main .performingLineUp .textContainer {
   padding: 25px 2.5% 25px max((100% - 1080px) / 2, 5%);
+}
+main .performingLineUp .imgContainer img {
+  -o-object-position: 50% 20%;
+     object-position: 50% 20%;
 }
 @media (max-width: 1000px) {
   main .performingLineUp .imgContainer {
     padding: 25px max((100% - 1080px) / 2, 5%) 25px 2.5%;
   }
 }
-main .performingLineUp .imgContainer img {
-  -o-object-position: 50% 20%;
-     object-position: 50% 20%;
-}
 main .newExperiences {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-@media (max-width: 890px) {
-  main .newExperiences {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 main .newExperiences .textContainer {
   padding: 25px max((100% - 1080px) / 2, 5%) 25px 2.5%;
@@ -490,6 +474,14 @@ main .sectionWide {
       -ms-flex-align: center;
           align-items: center;
   background-color: #0F0632;
+}
+@media (max-width: 890px) {
+  main .sectionWide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 main .sectionWide * {
   -ms-flex-preferred-size: 50%;
@@ -737,8 +729,10 @@ footer .footerContainer * {
     text-align: center;
   }
 }
-footer .formContainer h2 {
-  padding-top: 25px;
+@media (max-width: 890px) {
+  footer .formContainer h2 {
+    padding-top: 50px;
+  }
 }
 footer .formContainer form {
   padding-top: 19px;

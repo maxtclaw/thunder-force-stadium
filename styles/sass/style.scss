@@ -38,6 +38,7 @@ header {
         align-items: center;
     }
 
+    // Hide navMenu on smallest screen
     .navMenu {
         @include respond(small) {
             display: none;
@@ -74,6 +75,7 @@ header {
         flex-direction: column;
         justify-content: center;
 
+        // Hide .navSocial on smallest screen
         @include respond(small){
             display: none;
         }
@@ -93,7 +95,6 @@ header {
         }
     }
 
-
 }
 
 // Main Styling
@@ -103,20 +104,18 @@ main {
     .performingLineUp {
         flex-direction: row-reverse;
 
-        @include respond(mediumSmall) {
-            flex-direction: column;
-        }
-
         .textContainer {
             padding: 25px 2.5% 25px $wrapperGap;
         }
 
         .imgContainer {
-            @include respond(medium) {
-                padding: 25px $wrapperGap 25px 2.5%;
-            };
             img {
                 object-position: 50% 20%;
+            }
+
+            // Add padding to section images on medium screen
+            @include respond(medium) {
+                padding: 25px $wrapperGap 25px 2.5%;
             }
         }
     }
@@ -125,15 +124,12 @@ main {
     .newExperiences {
         flex-direction: row;
 
-        @include respond(mediumSmall) {
-            flex-direction: column;
-        }
-
         .textContainer {
             padding: 25px $wrapperGap 25px 2.5%;
         }
 
         .imgContainer {
+            // Add padding on medium screen
             @include respond(medium) {
                 padding: 25px 2.5% 25px $wrapperGap;
             }
@@ -144,6 +140,11 @@ main {
         display: flex;
         align-items: center;
 
+        // Change first two sections to column on mediumSmall screen
+        @include respond(mediumSmall) {
+            flex-direction: column;
+        }
+
         background-color: $colourDarkIndigo;
 
         * {
@@ -151,6 +152,7 @@ main {
         }
 
         .textContainer {
+            // Adjust padding on mediumSmall screen
             @include respond(mediumSmall) {
                 padding: 50px $wrapperGap;
             }
@@ -180,15 +182,17 @@ main {
             justify-content: center;
             align-items: center;
 
+            // Change section layout to column on mediumSmall screen
             @include respond(mediumSmall){
                 flex-direction: column;
             }
-
         }
 
         .imgContainer {
             min-width: 350px;
             width: 100%;
+
+            // Resize image on mediumSmall screen
             img {
                 @include respond(mediumSmall){
                     height: 40vh;
@@ -200,6 +204,7 @@ main {
 
         .textContainer {
             padding-left: 2.5%;
+            // Adjust text padding on mediumSmall screen
             @include respond(mediumSmall) {
                 padding: 50px 0 0 0;
             }
@@ -208,6 +213,7 @@ main {
     }
 
     .button {
+        // Center buttons on small screen
         @include respond(small){
             display: table;
             margin: auto;
@@ -233,6 +239,7 @@ main {
             justify-content: space-between;
             align-items: center;
 
+            // Change icons to column on small screen
             @include respond(small) {
                 flex-direction: column;
                 gap: 50px;
@@ -280,6 +287,7 @@ main {
                 flex-basis: calc((100% - 40px) / 3);
             }
 
+            // Remove last gallery image on mediumSmall screen
             .imgContainer:last-child {
                 @include respond(mediumSmall) {
                     display: none;
@@ -312,6 +320,7 @@ footer {
         flex-direction: column;
         align-items: center;
 
+        // Adjust size of .navMenu on small screen
         .navMenu {
             @include respond(small){
                 width: 100%;
@@ -328,12 +337,15 @@ footer {
         justify-content: space-between;
         align-items: center;
 
+        // Change .footerContainer to column on mediumSmall screen
         @include respond(mediumSmall){
             flex-direction: column;
         }
 
         * {
             flex-basis: 50%;
+            
+            //Fix .footerContainer child sizing on mediumSmall screen
             @include respond(mediumSmall){
                 width: 100%;
                 text-align: center;
@@ -343,7 +355,10 @@ footer {
 
     .formContainer {
             h2 {
-                padding-top: 25px;
+                // Adjust text padding on mediumSmall screen
+                @include respond(mediumSmall){
+                    padding-top: 50px;
+                }
             }
 
             form {
@@ -353,6 +368,7 @@ footer {
                 flex-direction: row;
                 justify-content: space-between;
 
+                // Change form to column on small screen
                 @include respond(small) {
                     flex-direction: column;
                 }
@@ -361,6 +377,8 @@ footer {
                     padding: 0 10px;
                     flex-grow: 1;
                     text-align: left;
+
+                    // Adjust text input sizing on small screen
                     @include respond(small) {
                         padding: 10px;
                         margin-bottom: 10px;
