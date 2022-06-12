@@ -272,6 +272,7 @@ h2 {
   font-size: 52px;
   font-weight: normal;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h3 {
@@ -289,7 +290,7 @@ h4 {
   text-align: center;
 }
 
-.readMore {
+.button {
   font-family: "Iceberg", cursive;
   font-size: 25px;
   font-weight: normal;
@@ -298,11 +299,16 @@ h4 {
   line-height: 29px;
   text-transform: uppercase;
   background-color: #9200FF;
+  border: none;
   padding: 5px 20px;
+}
+.button:hover, .button:focus {
+  background-color: #3D0369;
 }
 
 p,
-a {
+a,
+input {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: normal;
@@ -317,7 +323,8 @@ a {
 .navMenu {
   text-transform: uppercase;
   max-width: 750px;
-  width: 50vw;
+  width: 70%;
+  padding: 10px 0;
 }
 .navMenu ul {
   display: -webkit-box;
@@ -416,9 +423,6 @@ header .navSocial ul img {
   height: 50px;
 }
 
-main h2 {
-  margin: 0;
-}
 main .sectionWide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,7 +439,7 @@ main .sectionWide.performingLineUp {
           flex-direction: row-reverse;
 }
 main .sectionWide.performingLineUp .textContainer {
-  padding: 0 2.5% 0 max((100% - 1080px) / 2, 5%);
+  padding: 20px 2.5% 20px max((100% - 1080px) / 2, 5%);
 }
 main .sectionWide.newExperiences {
   -webkit-box-orient: horizontal;
@@ -444,14 +448,14 @@ main .sectionWide.newExperiences {
           flex-direction: row;
 }
 main .sectionWide.newExperiences .textContainer {
-  padding: 0 max((100% - 1080px) / 2, 5%) 0 2.5%;
+  padding: 20px max((100% - 1080px) / 2, 5%) 20px 2.5%;
 }
 main .sectionWide * {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
 main .getYourTickets {
-  padding: 7.5% 0 7.5% 0;
+  padding: 7.5% 0;
   background-color: #08080D;
 }
 main .getYourTickets .wrapper {
@@ -473,7 +477,7 @@ main .getYourTickets .textContainer {
   padding-left: 2.5%;
 }
 main .infoIcons {
-  padding: 10% 0 10% 0;
+  padding: 10% 0;
   background-color: #3D0369;
 }
 main .infoIcons .wrapper {
@@ -518,14 +522,14 @@ main .infoIcons a {
 }
 main .infoIcons img {
   width: 100px;
-  height: 100px;
+  height: 75px;
 }
 main .infoIcons h4 {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 main .theGram {
   background-color: #0F0632;
-  padding: 5% 0 5% 0;
+  padding: 5% 0;
 }
 main .theGram .wrapper {
   display: -webkit-box;
@@ -553,4 +557,80 @@ main .theGram .galleryContainer {
 main .theGram .galleryContainer img {
   -ms-flex-preferred-size: calc((100% - 40px) / 3);
       flex-basis: calc((100% - 40px) / 3);
+}
+
+footer {
+  padding: 0 0 0 0;
+  background-color: #3D0369;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer p {
+  margin: 0;
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footerContainer {
+  width: 100%;
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footerContainer * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+footer form {
+  padding-top: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer form input {
+  padding: 0 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+footer form .button {
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
+}
+footer .creationCredits {
+  width: 100%;
+  background-color: #08080D;
+  text-align: center;
 }
