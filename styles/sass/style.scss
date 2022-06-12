@@ -2,6 +2,7 @@
 @import "_setup";
 @import "_variables";
 @import "_base-styles";
+@import "_mixins";
 
 // Navigation
 .navMenu {
@@ -97,14 +98,22 @@ main {
         &.performingLineUp {
             flex-direction: row-reverse;
             .textContainer {
-                padding: 20px 2.5% 20px calc(max(calc((100% - 1080px) / 2), 5%))
+                padding: 25px 2.5% 25px calc(max(calc((100% - 1080px) / 2), 5%));
+            }
+            .imgContainer {
+                @include respond(medium) {
+                    padding: 25px calc(max(calc((100% - 1080px) / 2), 5%)) 25px 2.5%;
+                }
             }
         }
 
         &.newExperiences {
             flex-direction: row;
             .textContainer {
-                padding: 20px calc(max(calc((100% - 1080px) / 2), 5%)) 20px 2.5%;
+                padding: 25px calc(max(calc((100% - 1080px) / 2), 5%)) 25px 2.5%;
+            }
+            .imgContainer {
+                padding: 25px 2.5% 25px calc(max(calc((100% - 1080px) / 2), 5%));
             }
         }
 

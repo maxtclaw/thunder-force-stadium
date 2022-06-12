@@ -439,7 +439,12 @@ main .sectionWide.performingLineUp {
           flex-direction: row-reverse;
 }
 main .sectionWide.performingLineUp .textContainer {
-  padding: 20px 2.5% 20px max((100% - 1080px) / 2, 5%);
+  padding: 25px 2.5% 25px max((100% - 1080px) / 2, 5%);
+}
+@media (max-width: 1000px) {
+  main .sectionWide.performingLineUp .imgContainer {
+    padding: 25px max((100% - 1080px) / 2, 5%) 25px 2.5%;
+  }
 }
 main .sectionWide.newExperiences {
   -webkit-box-orient: horizontal;
@@ -448,7 +453,10 @@ main .sectionWide.newExperiences {
           flex-direction: row;
 }
 main .sectionWide.newExperiences .textContainer {
-  padding: 20px max((100% - 1080px) / 2, 5%) 20px 2.5%;
+  padding: 25px max((100% - 1080px) / 2, 5%) 25px 2.5%;
+}
+main .sectionWide.newExperiences .imgContainer {
+  padding: 25px 2.5% 25px max((100% - 1080px) / 2, 5%);
 }
 main .sectionWide * {
   -ms-flex-preferred-size: 50%;

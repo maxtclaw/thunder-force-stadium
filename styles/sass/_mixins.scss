@@ -1,0 +1,6 @@
+// Media Query
+@mixin respond($breakpoint) {
+    @if ($breakpoint == medium) {
+        @media (max-width: 1000px) {@content}
+    }
+}
