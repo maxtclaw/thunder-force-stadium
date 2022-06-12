@@ -38,6 +38,12 @@ header {
         align-items: center;
     }
 
+    .navMenu {
+        @include respond(small) {
+            display: none;
+        }
+    }
+
     .headerTextContainer {
         padding: 10% 0 20% 0;
 
@@ -68,6 +74,10 @@ header {
         flex-direction: column;
         justify-content: center;
 
+        @include respond(small){
+            display: none;
+        }
+
         ul {   
             margin: auto 0;
 
@@ -89,6 +99,7 @@ header {
 // Main Styling
 main {
 
+    // Performing LineUp Section
     .performingLineUp {
         flex-direction: row-reverse;
 
@@ -110,6 +121,7 @@ main {
         }
     }
 
+    // New Experiences Section
     .newExperiences {
         flex-direction: row;
 
@@ -157,6 +169,7 @@ main {
         }
     }
 
+    // Get Your Tickets Section
     .getYourTickets {
         padding: 7.5% 0;
         background-color: $colourAlmostBlack;
@@ -194,6 +207,14 @@ main {
 
     }
 
+    .button {
+        @include respond(small){
+            display: table;
+            margin: auto;
+        }
+    }
+
+    // Three Icon Section
     .infoIcons {
         padding: 10% 0;
         background-color: $colourRoyalPurple;
@@ -211,6 +232,15 @@ main {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+
+            @include respond(small) {
+                flex-direction: column;
+                gap: 50px;
+            }
+        }
+
+        li {
+            margin-top: 20px;
         }
 
         a {
@@ -229,6 +259,7 @@ main {
         }
     }
     
+    // The Gram Gallery Section
     .theGram {
         background-color: $colourDarkIndigo;
         padding: 5% 0;
@@ -280,6 +311,12 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        .navMenu {
+            @include respond(small){
+                width: 100%;
+            }
+        }
     }
 
     .footerContainer {
@@ -316,10 +353,19 @@ footer {
                 flex-direction: row;
                 justify-content: space-between;
 
+                @include respond(small) {
+                    flex-direction: column;
+                }
+
                 input {
                     padding: 0 10px;
                     flex-grow: 1;
                     text-align: left;
+                    @include respond(small) {
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
                 }
 
                 .button {
