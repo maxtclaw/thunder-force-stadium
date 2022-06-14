@@ -9,5 +9,13 @@ $colourAlmostBlack: #08080D;
 $fontIceberg: 'Iceberg', cursive;
 $fontMontserrat: 'Montserrat', sans-serif;
 
+// Font Sizes
+$baseFontSize: 1rem;
+
 // Calculations
 $wrapperGap: calc(max(calc((100% - 1080px) / 2), 5%));
+
+// Breakpoints
+$mediumBreakWidth: 1000px;
+$mediumSmallBreakWidth: 890px;
+$smallBreakWidth: 800px;

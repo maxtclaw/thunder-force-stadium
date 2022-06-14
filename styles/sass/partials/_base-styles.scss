@@ -26,17 +26,17 @@ img {
 // Typography Styling
 h1 {
     font-family: $fontIceberg;
-    font-size: 80px;
+    @include clampFontSize(8 * $baseFontSize);
     font-weight: normal;
     text-transform: uppercase;
 
     text-align: center;
-    line-height: 80px;
+    @include clampLineHeight(8 * $baseFontSize);
 }
 
 h2 {
     font-family: $fontIceberg;
-    font-size: 52px;
+    @include clampFontSize(5.2 * $baseFontSize);
     font-weight: normal;
     text-transform: uppercase;
 
@@ -45,7 +45,7 @@ h2 {
 
 h3 {
     font-family: $fontMontserrat;
-    font-size: 35px;
+    @include clampFontSize(3.5 * $baseFontSize);
     font-weight: normal;
 
     text-align: center;
@@ -53,7 +53,7 @@ h3 {
 
 h4 {
     font-family: $fontMontserrat;
-    font-size: 30px;
+    @include clampFontSize(3 * $baseFontSize);
     font-weight: normal;
     text-transform: uppercase;
 
@@ -62,12 +62,12 @@ h4 {
 
 .button {
     font-family: $fontIceberg;
-    font-size: 25px;
+    @include clampFontSize(2.5 * $baseFontSize);
     font-weight: normal;
     color: inherit;
 
     text-align: center;
-    line-height: 29px;
+    @include clampLineHeight(2.9 * $baseFontSize);
     text-transform: uppercase;
 
     background-color: $colourVivdPurple;
@@ -83,10 +83,10 @@ p,
 a,
 input {
     font-family: $fontMontserrat;
-    font-size: 20px;
+    @include clampFontSize(2 * $baseFontSize);
     font-weight: normal;
 
-    line-height: 29px;
+    @include clampLineHeight(2.9 * $baseFontSize);;
 }
 
 a {

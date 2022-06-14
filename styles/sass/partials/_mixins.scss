@@ -1,20 +1,28 @@
 // Media Query
 @mixin respond($breakpoint) {
     @if ($breakpoint == medium) {
-        @media (max-width: 1000px){
+        @media (max-width: $mediumBreakWidth){
             @content
         }
     };
 
     @if ($breakpoint == mediumSmall){
-        @media (max-width: 890px){
+        @media (max-width: $mediumSmallBreakWidth){
             @content
         }
     };
 
     @if ($breakpoint == small){
-        @media (max-width: 800px) {
+        @media (max-width: $smallBreakWidth) {
             @content
         }
     }
+};
+
+@mixin clampFontSize($preferredSize) {
+    font-size: clamp(1vw, $preferredSize, 10vw);
+}
+
+@mixin clampLineHeight($preferredSize) {
+    line-height: clamp(1vw, $preferredSize, 10vw);
 }

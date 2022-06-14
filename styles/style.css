@@ -261,16 +261,16 @@ img {
 
 h1 {
   font-family: "Iceberg", cursive;
-  font-size: 80px;
+  font-size: clamp(1vw, 8rem, 10vw);
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
-  line-height: 80px;
+  line-height: clamp(1vw, 8rem, 10vw);
 }
 
 h2 {
   font-family: "Iceberg", cursive;
-  font-size: 52px;
+  font-size: clamp(1vw, 5.2rem, 10vw);
   font-weight: normal;
   text-transform: uppercase;
   margin: 0;
@@ -278,14 +278,14 @@ h2 {
 
 h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 35px;
+  font-size: clamp(1vw, 3.5rem, 10vw);
   font-weight: normal;
   text-align: center;
 }
 
 h4 {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: clamp(1vw, 3rem, 10vw);
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
@@ -293,11 +293,11 @@ h4 {
 
 .button {
   font-family: "Iceberg", cursive;
-  font-size: 25px;
+  font-size: clamp(1vw, 2.5rem, 10vw);
   font-weight: normal;
   color: inherit;
   text-align: center;
-  line-height: 29px;
+  line-height: clamp(1vw, 2.9rem, 10vw);
   text-transform: uppercase;
   background-color: #9200FF;
   border: 1px #9200FF solid;
@@ -311,9 +311,9 @@ p,
 a,
 input {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: clamp(1vw, 2rem, 10vw);
   font-weight: normal;
-  line-height: 29px;
+  line-height: clamp(1vw, 2.9rem, 10vw);
 }
 
 a {
