@@ -1,8 +1,8 @@
 // Imports
-@import "_setup";
-@import "_variables";
-@import "_base-styles";
-@import "_mixins";
+@import "./partials/setup";
+@import "./partials/variables";
+@import "./partials/base-styles";
+@import "./partials/mixins";
 
 // Navigation
 .navMenu {
